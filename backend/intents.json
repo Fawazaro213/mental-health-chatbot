@@ -1,0 +1,63 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good day", "What's up"],
+      "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "I am leaving"],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "anxiety",
+      "patterns": [
+        "I am feeling anxious",
+        "I'm so worried",
+        "I can't stop worrying",
+        "My anxiety is high",
+        "I feel overwhelmed with worry"
+      ],
+      "responses": [
+        "It's okay to feel anxious. Try taking a few deep breaths. Inhale for 4 seconds, hold for 4, and exhale for 6.",
+        "Anxiety can be tough. Can you tell me what's on your mind?",
+        "Remember to be kind to yourself. Sometimes just acknowledging the anxiety is a helpful first step."
+      ]
+    },
+    {
+      "tag": "depression",
+      "patterns": [
+        "I feel so sad",
+        "I don't have energy for anything",
+        "I feel empty",
+        "I'm feeling down",
+        "I think I have depression"
+      ],
+      "responses": [
+        "I'm sorry to hear you're feeling this way. It's important to talk about these feelings. I'm here to listen.",
+        "Feeling empty can be incredibly difficult. Remember that you are not alone in this.",
+        "It takes courage to express these feelings. Please know that support is available."
+      ]
+    },
+    {
+      "tag": "stress",
+      "patterns": [
+        "I'm so stressed out",
+        "I have so much pressure",
+        "Too much work",
+        "I can't handle this stress"
+      ],
+      "responses": [
+        "Stress is a common challenge, especially for students. [cite: 5] Let's try to break things down. What is the biggest source of stress right now?",
+        "When feeling stressed, a short break can make a big difference. Can you step away for just 5 minutes?",
+        "Let's focus on one thing at a time. What's the most urgent task on your mind?"
+      ]
+    }
+  ]
+}
