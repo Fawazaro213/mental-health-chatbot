@@ -1,9 +1,6 @@
 from functools import wraps
 import jwt
-from models import User
-from models import User, JournalEntry
 from models import User, JournalEntry, ChatMessage
-import random
 import os
 import json
 from flask import Flask, request, jsonify
@@ -94,6 +91,8 @@ def chat(current_user):
     # It's better to use environment variables for this in a real app,
     # but for now, we'll place it here for simplicity.
     HUGGING_FACE_API_TOKEN = os.environ.get("HUGGING_FACE_API_TOKEN")
+    if not HUGGING_FACE_API_TOKEN:
+        return jsonify({"error": "Hugging Face API token not configured"}), 500
 
     data = request.get_json()
     user_input = data.get('message', '')
